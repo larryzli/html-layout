@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #EEEEEE; }
+
+.header {
+  width: 100%;
+  height: 20vh;
+  background-color: #444444; }
+
+.content {
+  height: 70vh;
+  background-color: #FFFFFF;
+  width: 75%;
+  margin: auto; }
+
+.footer {
+  height: 10vh;
+  background-color: #333333;
+  width: 75%;
+  margin: auto; }
+
+/*# sourceMappingURL=index.css.map */
