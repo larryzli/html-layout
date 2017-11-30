@@ -1,0 +1,40 @@
+$arr: (rgb(64, 125, 196), cyan, lime, yellow);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(224, 224, 224);
+    padding: 10px;
+}
+
+#logo {
+    height: 100%;
+    width: 80px;
+    background-color: blue;
+    margin-left: 15px;
+}
+
+.content {
+    padding: 70px;
+    font-family: sans-serif;
+    color: grey;
+    letter-spacing: 0.05em
+}
+
+.bars {
+    height: 600px;
+    background-color:grey;
+    width: 100vw;
+    
+    @for $i from 1 through 4 {
+        div:nth-child(#{$i}) {
+            height: 25%;
+            width: 100%; 
+            background-color: nth($arr, $i);
+        }
+    }
+}
